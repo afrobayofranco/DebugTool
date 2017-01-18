@@ -10,7 +10,7 @@ exports.debug = (message, status) => {
   const dt = new Date();
   const utcDate = dt.toUTCString();
   // Stores the file dir and the .log names
-  const dir = './src/logs';
+  const dir = '../../logs';
   const log = dir + '/andy.log';
   // Stores color to be available later on
   let color;
