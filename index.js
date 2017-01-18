@@ -10,7 +10,7 @@ exports.debug = (message, status) => {
   const dt = new Date();
   const utcDate = dt.toUTCString();
   // Stores the file dir and the .log names
-  const dir = '../../logs';
+  const dir = './logs';
   const log = dir + '/andy.log';
   // Stores color to be available later on
   let color;
@@ -35,9 +35,9 @@ exports.debug = (message, status) => {
     console.log(msgcons);
 
     // Check for the logs dir, if does not exists, it is created it.
-    if (!filesystem.existsSync(dir)) {
-      filesystem.mkdirSync(dir);
-    }
+    filesystem.mkdir(dir, (err) => {
+      // Ignore error if directory already exists.
+    });
 
     // Checks for .log file. If does not exists, it is created. If exists
     // logs get appended
