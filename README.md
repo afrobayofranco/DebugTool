@@ -1,7 +1,5 @@
 # **An.dy Debug Tool**
 
-[![GitHub issues](https://img.shields.io/github/release/afrobayofranco/DebugTool.svg?style=plastic)](https://github.com/afrobayofranco/DebugTool/releases)
-
 An.dy debug tool makes debugging and easier task. Just install it in your project, and with a quick setup, you will be getting messages on your console and they will be registered to a .log file.
 
 ## install
