@@ -1,6 +1,6 @@
 {
   "name": "andydebugtool",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Debugger",
   "main": "index.js",
   "scripts": {
