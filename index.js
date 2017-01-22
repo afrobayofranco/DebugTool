@@ -1,6 +1,5 @@
 // Requires
 const chalk = require('chalk');
-const packjson = 'debugtool' /*('../../../package.json')*/;
 const filesystem = require('fs');
 
 // Debugging, the function to be available for other files
@@ -28,8 +27,8 @@ exports.debug = (message, status) => {
     }
 
     // Stores messages, one for console.log and other for the file .log
-    const msgcons = utcDate + ':\n   ' + chalk.black.bgGreen('[' + packjson.name + ']') + ' ' + color(message);
-    const msgtext = utcDate + ':\n   [' + packjson.name + '] ' + message + '\n';
+    const msgcons = utcDate + ':\n   ' + chalk.black.bgGreen('[debugtool]') + ' ' + color(message);
+    const msgtext = utcDate + ':\n   [debugtool] ' + message + '\n';
 
     // Console log the message with chalk included
     console.log(msgcons);

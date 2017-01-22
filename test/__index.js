@@ -1,6 +1,6 @@
 // Requires,
 const expect = require('chai').expect;
-const debugtl = require('../src/index');
+const debugtl = require('../index');
 
 
 // Tests, starts by calling the API from Models.
