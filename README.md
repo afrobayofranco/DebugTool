@@ -38,3 +38,27 @@ Debug messages will appear in the following form, according to their placement a
 Fri, 13 Jan 2017 01:38:24 GMT:
    [an.dy_url_shortener] YOUR_MESSAGE
  ~~~~
+
+## Running Tests
+Unit testing is provided with mocha and chai.
+
+In order to run the tests use:
+~~~~
+npm test
+~~~~
+Or if you have mocha install globally (with the -g option), you could also use:
+~~~~
+mocha
+~~~~
+
+A complete successful test should look like this:
+~~~~
+debugTool
+    ✓ Should test for no print
+Sun, 22 Jan 2017 20:03:57 GMT:
+   [debugtool] success
+    ✓ Should test for print
+
+
+  2 passing (9ms)
+~~~~
