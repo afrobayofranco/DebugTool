@@ -1,6 +1,6 @@
 // Requires
 const chalk = require('chalk');
-const packjson = require('../../package.json');
+const packjson = 'debugtool' /*('../../../package.json')*/;
 const filesystem = require('fs');
 
 // Debugging, the function to be available for other files
@@ -46,5 +46,6 @@ exports.debug = (message, status) => {
         console.log(err);
       }
     });
+    return msgtext;
   }
 };

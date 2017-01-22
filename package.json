@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/afrobayofranco/DebugTool#readme",
   "dependencies": {
+    "chai": "^3.5.0",
     "chalk": "^1.1.3"
   }
 }
