@@ -1,5 +1,7 @@
 # **An.dy Debug Tool**
 
+ [![codeship](https://codeship.com/projects/5372b130-c332-0134-9ef6-66f63a02c034/status?branch=master)](https://app.codeship.com/projects/197550)
+
 An.dy debug tool makes debugging and easier task. Just install it in your project, and with a quick setup, you will be getting messages on your console and they will be registered to a .log file.
 
 ## install
