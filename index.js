@@ -1,6 +1,5 @@
 // Requires
 const chalk = require('chalk');
-const filesystem = require('fs');
 
 // Debugging, the function to be available for other files
 // and brings in the message and status
@@ -8,9 +7,6 @@ exports.debug = (message, status) => {
   // Create a new date for the timestamp
   const dt = new Date();
   const utcDate = dt.toUTCString();
-  // Stores the file dir and the .log names
-  const dir = './logs';
-  const log = dir + '/andy.log';
   // Stores color to be available later on
   let color;
   // DEBUG Switch if true it activates debbuging
@@ -26,25 +22,10 @@ exports.debug = (message, status) => {
       color = chalk.yellow;
     }
 
-    // Stores messages, one for console.log and other for the file .log
+    // Stores message
     const msgcons = utcDate + ':\n   ' + chalk.black.bgGreen('[debugtool]') + ' ' + color(message);
-    const msgtext = utcDate + ':\n   [debugtool] ' + message + '\n';
 
     // Console log the message with chalk included
     console.log(msgcons);
-
-    // Check for the logs dir, if does not exists, it is created it.
-    filesystem.mkdir(dir, (err) => {
-      // Ignore error if directory already exists.
-    });
-
-    // Checks for .log file. If does not exists, it is created. If exists
-    // logs get appended
-    filesystem.appendFile(log, msgtext, (err) => {
-      if (err) {
-        console.log(err);
-      }
-    });
-    return msgtext;
   }
 };
