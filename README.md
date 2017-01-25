@@ -26,7 +26,7 @@ debugTool.debug('YOUR_MESSAGE', '{type}');
 #### Error Types
 ***success*** will turn debug message to green color.  
 ***error*** will turn debug message to red color.  
-You can leave the argument empty and debug message will be yellow color.
+***warn***  will turn debug message to yellow color.
 
 ### Running debug mode
 Once messages are in place, initiate Debug mode on the command line by setting the environmental variable:
@@ -55,12 +55,8 @@ mocha
 
 A complete successful test should look like this:
 ~~~~
-debugTool
-    ✓ Should test for no print
-Sun, 22 Jan 2017 20:03:57 GMT:
-   [debugtool] success
-    ✓ Should test for print
+debugutil
 
 
-  2 passing (9ms)
+ 3 passing (13ms)
 ~~~~
