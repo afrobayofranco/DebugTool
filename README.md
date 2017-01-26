@@ -60,3 +60,10 @@ debugutil
 
  3 passing (13ms)
 ~~~~
+
+## Version Bumper
+This tool counts with an automated version bumper, it will bump the part of the version indeicated by 1.
+To use it, on you command line do:
+~~~~
+gulp bump { major | minor | patch }
+~~~~
